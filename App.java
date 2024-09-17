@@ -138,8 +138,6 @@ public class App {
 
         };*/
 
-        //Trying to have it read a text file
-
         
         try {
             
@@ -152,68 +150,8 @@ public class App {
         } 
     
         System.out.println("Input a Valid Sudoku Puzzle(By Row)");
-        /*for(int i = 0; i < GRID_SIZE; i++){
-            int row = 0;
-            if(rowB.length() > 0){
-                row = toInt(rowB.substring(i, i + 1));
-            }
-            //String lrow = "";
-            //lrow += row;
-            //if(lrow.length == 9)
-                for(int j = 0; j < GRID_SIZE; j++){
-                    int temprow = 0;
-                    /*
-                    12,345,678.9 / 10
-                    1,234,567.89 / 100
-                    123,456.789 / 1,000
-                    12,345.6789 / 10,000
-                    1,234.56789 / 100,000
-                    123.456789 / 1,000,000
-                    12.3456789 / 10,000,000
-                    1.23456789 / 100,000,000
-                    .123456789 / 1,000,000,000
-                    *//*
-                    if(j == 0){
-                        temprow = row / 100000000;
-                    }else if(j == 1){
-                        temprow = row / 10000000;
-                        temprow %= 10;
-                    }else if(j == 2){
-                        temprow = row / 1000000;
-                        temprow %= 10;
-                    }else if(j == 3){
-                        temprow = row / 100000;
-                        temprow %= 10;
-                    }else if(j == 4){
-                        temprow = row / 10000;
-                        temprow %= 10;
-                    }else if(j == 5){
-                        temprow = row / 1000;
-                        temprow %= 10;
-                    }else if(j == 6){
-                        temprow = row / 100;
-                        temprow %= 10;
-                    }else if(j == 7){
-                        temprow = row / 10;
-                        temprow %= 10;
-                    }else if(j == 8){
-                        temprow = row;
-                        temprow %= 10;
-                    }
-                    
-                    temprow = row / (int)Math.pow(10, 8-j);
-                    temprow %= 10;
-
-                    board[i][j] = toString(temprow);
-                }
-            //}
-        }*/
 
         System.out.println("Puzzle Scanned");
-
-        //int[][] bd;
-
-        //App board = new App(b1);
 
         printBoard(board);
         if(solveBoard(board)){
